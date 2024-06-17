@@ -20,7 +20,7 @@ const CTA = () => {
         </div>
         </a> */}
 
-        <Link to='contact' spy={true} smooth={true} offset={50} duration={500} className='btn btn-primary'>Let's Talk! <FcCustomerSupport/></Link>
+        <Link to='contact' spy={true} smooth={true} offset={50} duration={500} className='btn btn-primary'>Let's Talk!.. <FcCustomerSupport/></Link>
 
     </div>
   )
