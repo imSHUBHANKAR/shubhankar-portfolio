@@ -26,6 +26,37 @@
     transform: rotate(0);
 }
 
+
+/* about box container */
+/* .experience__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+} */
+.experience__container >  div{  
+    /* I used ">div" because it will make a box with the help of div which is just below the "experience__container" class */
+    background: var(--color-bg-variant);
+    /* padding: 2.4rem 5rem; */
+    padding: 1rem ;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    background-color: #013a63;
+    width: 30vw;
+    padding: 1rem; /* Adjust as necessary */
+    font-size: 1rem; /* Increase font size */
+    line-height: 1.5;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
 .about__cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
