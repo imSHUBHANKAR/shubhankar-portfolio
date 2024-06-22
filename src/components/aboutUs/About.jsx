@@ -16,7 +16,46 @@ const About = () => {
           <div className="portfolio__item-image">
             <img src={ME} alt="" />
           </div>
-          <h3>Academic Website</h3>
+          <div>
+            <h3>Academic Website</h3>
+            <a
+              className="linkedin"
+              href="https://www.linkedin.com/in/mrshubhankar/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              LinkedIn
+              <FaLinkedinIn />
+            </a>
+            <a
+              className="github"
+              href="https://github.com/imSHUBHANKAR"
+              rel="noreferrer"
+              target="_blank"
+            >
+              GitHub
+              <FaGithub />
+            </a>
+            <a
+              className="dribbble"
+              href="https://dribbble.com/Shubh242"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Dribbble
+              <FcDribbble />
+            </a>
+            <a
+              className="benhance"
+              href="https://www.behance.net/mr-shubhankar"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Behance
+              <FcDribbble />
+            </a>
+          </div>
+
           <div className="portfolio__item-cts"></div>
         </article>
 
