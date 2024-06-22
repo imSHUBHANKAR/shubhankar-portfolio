@@ -1,10 +1,10 @@
 import React from 'react'
-import {Link} from 'react-scroll'
+// import {Link} from 'react-scroll'
 import './about.css'
 import ME from '../../assets/aboutPic.jpg'
-import {FcApproval} from 'react-icons/fc'
-import {FcOpenedFolder} from 'react-icons/fc'
-import {FcCustomerSupport} from 'react-icons/fc'
+// import {FcApproval} from 'react-icons/fc'
+// import {FcOpenedFolder} from 'react-icons/fc'
+// import {FcCustomerSupport} from 'react-icons/fc'
 
 
 const About = () => {
