@@ -25,7 +25,7 @@ const Footer = () => {
       </ul>
       <div className='footer__socials'>
         <div className='hexagon'>
-        <a href='https://www.facebook.com/' rel="noopener noreferrer" target='_blank' style={{color: "#16A2F9", fontsize: '10em'}}><BsFacebook/></a>
+        <a href='https://www.facebook.com/' rel="noopener noreferrer" target='_blank' style={{color: "#16A2F9", fontsize: '10em'}}><BsFacebook /></a>
         </div>
         <div className='hexagon'>
         <a href='https://www.instagram.com' rel="noopener noreferrer" target='_blank' style={{color:"#fbad50"}}><BsInstagram/></a>

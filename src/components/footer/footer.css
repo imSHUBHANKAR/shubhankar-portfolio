@@ -34,7 +34,7 @@ footer a{
 .footer__socials{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-bottom: 1rem;
 
     
@@ -54,7 +54,7 @@ footer a{
 
     z-index: 1;
   margin: auto;
-  font-size: 10px;
+  font-size: 1px;
   color: transparent;
   background: linear-gradient(45deg, #a58fe9, #e37682);
   -webkit-background-clip: text;
