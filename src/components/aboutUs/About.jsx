@@ -20,14 +20,13 @@ const About = () => {
             <img src={ME} alt="" />
           </div>
           <div>
-            <h3>Academic Website</h3>
+            <h3>Social Links</h3>
             <a
               className="linkedin"
               href="https://www.linkedin.com/in/mrshubhankar/"
               rel="noreferrer"
               target="_blank"
             >
-              LinkedIn
               <FaLinkedinIn />
             </a>
             <a
@@ -36,7 +35,6 @@ const About = () => {
               rel="noreferrer"
               target="_blank"
             >
-              GitHub
               <FaGithub />
             </a>
             <a
@@ -45,7 +43,6 @@ const About = () => {
               rel="noreferrer"
               target="_blank"
             >
-              Dribbble
               <FcDribbble />
             </a>
             <a
@@ -54,7 +51,6 @@ const About = () => {
               rel="noreferrer"
               target="_blank"
             >
-              Behance
               <FcDribbble />
             </a>
           </div>
