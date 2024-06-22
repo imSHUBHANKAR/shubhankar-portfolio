@@ -11,7 +11,8 @@ header{
 }
 
 .MyName{
-    font-size: 55px;
+    /* font-size: 55px; */
+    font-size: 5vw;
     font-weight: 900;
     background-image: url('../../assets/TextImg7.jpg');
     background-size: cover;
@@ -21,7 +22,8 @@ header{
     color: transparent;
 }
 .MyPost{
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: 10vw;
     font-weight: 700;
     background-image: linear-gradient(to right bottom, #3c096c, #9d0069, #e02951, #ff782d, #fdc500);
     background-size: cover;

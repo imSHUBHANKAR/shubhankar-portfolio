@@ -17,64 +17,64 @@ const Experience = () => {
           <h3>Frontend Development</h3>
           <div className='experience__content'>
             <article className='experience__details'>
-              <FcRating className='experience__details-icon'/>
+              <FcRating className='experience__details-icon' />
               <div>
-              <h4>HTML</h4>
-              <small className='text-light'>Experienced</small>
+                <h4>HTML</h4>
+                <small className='text-light'>Experienced</small>
               </div>
             </article>
             <article className='experience__details'>
-              <FcRating className='experience__details-icon'/>
+              <FcRating className='experience__details-icon' />
               <div>
-              <h4>CSS</h4>
-              <small className='text-light'>Intermediate</small> 
+                <h4>CSS</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience__details'>
-              <FcRating className='experience__details-icon'/>
+              <FcRating className='experience__details-icon' />
               <div>
-              <h4>JavaScript</h4>
-              <small className='text-light'>Intermediate</small>
+                <h4>JavaScript</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience__details'>
-              <FcRating className='experience__details-icon'/>
+              <FcRating className='experience__details-icon' />
               <div>
-              <h4>Bootstrap</h4>
-              <small className='text-light'>Intermediate</small>
+                <h4>Bootstrap</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience__details'>
-              <FcRating className='experience__details-icon'/>
+              <FcRating className='experience__details-icon' />
               <div>
-              <h4>React Js</h4>
-              <small className='text-light'>Intermediate</small>
+                <h4>React Js</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
           </div>
         </div>
         <div className="experience__backend">
-        <h3>Backend Development</h3>
+          <h3>Backend Development</h3>
           <div className='experience__content'>
             <article className='experience__details'>
-              <FcLandscape className='experience__details-icon'/>
+              <FcLandscape className='experience__details-icon' />
               <div>
-              <h4>NodeJs</h4>
-              <small className='text-light'>Intermediate</small>
+                <h4>NodeJs</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience__details'>
-              <FcLandscape className='experience__details-icon'/>
+              <FcLandscape className='experience__details-icon' />
               <div>
-              <h4>MongoDB</h4>
-              <small className='text-light'>Intermediate</small>
+                <h4>MongoDB</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience__details'>
-              <FcLandscape className='experience__details-icon'/>
+              <FcLandscape className='experience__details-icon' />
               <div>
-              <h4>PHP</h4>
-              <small className='text-light'>Intermediate</small>
+                <h4>PHP</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             {/* <article className='experience__details'>
@@ -85,7 +85,7 @@ const Experience = () => {
               </div>
             </article> */}
             <article className='experience__details'>
-              <FcLandscape className='experience__details-icon'/>
+              <FcLandscape className='experience__details-icon' />
               <div>
                 <h4>Laravel</h4>
                 <small className='text-light'>Intermediate</small>
@@ -98,17 +98,17 @@ const Experience = () => {
           <h3>App Development</h3>
           <div className='experience__content'>
             <article className='experience__details'>
-              <FcComments className='experience__details-icon'/>
+              <FcComments className='experience__details-icon' />
               <div>
-              <h4>Android App</h4>
-              <small className='text-light'>Experienced</small>
+                <h4>Android App</h4>
+                <small className='text-light'>Experienced</small>
               </div>
             </article>
             <article className='experience__details'>
-              <FcComments className='experience__details-icon'/>
+              <FcComments className='experience__details-icon' />
               <div>
-              <h4>Kotlin</h4>
-              <small className='text-light'>Intermediate</small> 
+                <h4>Kotlin</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
           </div>
@@ -117,27 +117,27 @@ const Experience = () => {
         <div className='experience__frontend'>
           <h3>UI/UX Design</h3>
           <div className='experience__content'>
-            
+
             <article className='experience__details'>
-              <FcOk className='experience__details-icon'/>
+              <FcOk className='experience__details-icon' />
               <div>
-              <h4>User Interface</h4>
-              <small className='text-light'>Intermediate</small>
+                <h4>User Interface</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience__details'>
-              <FcOk className='experience__details-icon'/>
+              <FcOk className='experience__details-icon' />
               <div>
-              <h4>User Experience</h4>
-              <small className='text-light'>Intermediate</small>
+                <h4>User Experience</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <div className="aexperience__content-image">
-              <img src={UI} alt="UI-pic"/>
+              <img src={UI} alt="UI-pic" />
             </div>
           </div>
         </div>
-        
+
       </div>
     </section>
   )
