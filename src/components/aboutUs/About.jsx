@@ -5,7 +5,7 @@ import ME from "../../assets/aboutPic.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FcDribbble } from "react-icons/fc";
 import { FaLinkedinIn } from "react-icons/fa";
-
+import { BsBehance } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -17,42 +17,44 @@ const About = () => {
         {/* --------------------------------1st sections -------------------------------------------------*/}
         <article className="portfolio__item ">
           <div className="portfolio__item-image">
-            <img src={ME} alt="" />
+            <img src={ME} alt="Profile_Pic" />
           </div>
-          <div>
+          <div className="s">
             <h3>Social Links</h3>
-            <a
-              className="linkedin"
-              href="https://www.linkedin.com/in/mrshubhankar/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a
-              className="github"
-              href="https://github.com/imSHUBHANKAR"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FaGithub />
-            </a>
-            <a
-              className="dribbble"
-              href="https://dribbble.com/Shubh242"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FcDribbble />
-            </a>
-            <a
-              className="benhance"
-              href="https://www.behance.net/mr-shubhankar"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FcDribbble />
-            </a>
+            <div className="social_links">
+              <a
+                className="linkedin"
+                href="https://www.linkedin.com/in/mrshubhankar/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FaLinkedinIn size={32} />
+              </a>
+              <a
+                className="github"
+                href="https://github.com/imSHUBHANKAR"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FaGithub size={32} />
+              </a>
+              <a
+                className="dribbble"
+                href="https://dribbble.com/Shubh242"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FcDribbble size={32} />
+              </a>
+              <a
+                className="benhance"
+                href="https://www.behance.net/mr-shubhankar"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <BsBehance size={32} />
+              </a>
+            </div>
           </div>
 
           <div className="portfolio__item-cts"></div>
