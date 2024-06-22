@@ -23,8 +23,8 @@ header{
 }
 .MyPost{
     /* font-size: 35px; */
-    font-size: 10vw;
-    font-weight: 700;
+    font-size: 6vw;
+    font-weight: 0;
     background-image: linear-gradient(to right bottom, #3c096c, #9d0069, #e02951, #ff782d, #fdc500);
     background-size: cover;
     background-position: center;
