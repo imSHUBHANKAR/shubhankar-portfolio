@@ -7,7 +7,7 @@
 .about__me{
     width: 60%;
     aspect-ratio: 1/1;
-    border-radius: 30px;
+    border-radius: 10%;
     background: linear-gradient(45deg, transparent,var(--color-primary),transparent);
     display: grid;
     place-items: center;
@@ -15,7 +15,7 @@
 
 .about__me-image{
     width: 95%;
-    border-radius: 30px;
+    border-radius: 10%;
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
@@ -27,12 +27,7 @@
 }
 
 
-/* about box container */
-/* .experience__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-} */
+/* about box container-------------------------------------------------------------- */
 .experience__container >  div{  
     /* I used ">div" because it will make a box with the help of div which is just below the "experience__container" class */
     background: var(--color-bg-variant);
@@ -47,6 +42,28 @@
     font-size: 1rem; /* Increase font size */
     line-height: 1.5;
     padding: 5px;
+}
+/* ====================Media Queries(medium devices)========*/
+@media screen and(max-width:1024px) {
+    .about__container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about__me{
+        width: 50%;
+        /* margin: 2rem auto 4rem; */
+    }
+
+
+}
+/* ====================Media Queries(small devices)========*/
+@media screen and(max-width:600px) {
+    .about__me{
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+    
 }
 
 
