@@ -2,6 +2,9 @@ import React from "react";
 import "./about.css";
 
 import ME from "../../assets/aboutPic.jpg";
+import { FaGithub } from "react-icons/fa";
+import { FcDribbble } from "react-icons/fc";
+import { FaLinkedinIn } from "react-icons/fa";
 
 
 const About = () => {
