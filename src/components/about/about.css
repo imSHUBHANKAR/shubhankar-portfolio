@@ -43,6 +43,55 @@
     line-height: 1.5;
     padding: 5px;
 }
+
+/* ====================Dog Pic========*/
+/* PortfolioCard.css */
+.portfolio-card {
+  background-color: #1a1b2f;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+}
+
+.portfolio-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dog-image {
+  position: absolute;
+  top: -75px;
+  left: 100px;
+}
+
+.dog-image img {
+  width: 120px;
+  height: auto;
+}
+
+.portfolio-details {
+  margin-left: 80px;
+}
+
+.portfolio-amount {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.portfolio-growth {
+  display: flex;
+  align-items: center;
+}
+
+.growth-icon {
+  margin-right: 5px;
+}
+
+/* ====================Dog Pic========*/
+
 /* ====================Media Queries(medium devices)========*/
 @media screen and(max-width:1024px) {
     .about__container{

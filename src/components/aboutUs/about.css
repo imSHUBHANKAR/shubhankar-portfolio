@@ -50,6 +50,80 @@
     margin-bottom: 1rem;
 }
 
+
+/* ====================Dog Pic========*/
+/* PortfolioCard.css */
+.portfolio-card {
+  background-color: #1a1b2f;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  border-radius: 2rem;
+  position: relative;
+  background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+.portfolio-card:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.portfolio-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.dog-image {
+  position: absolute;
+  top: -75px;
+  left: 100px;
+  
+}
+
+.dog-image img {
+  width: 120px;
+  height: auto;
+}
+
+.portfolio-card-details {
+  margin-left: 0px;
+}
+
+.portfolio-card__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.portfolio-card__social_links{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 30px;
+}
+.portfolio-card-amount {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.portfolio-card-growth {
+  display: flex;
+  align-items: center;
+}
+
+.growth-icon {
+  margin-right: 5px;
+}
+
+/* ====================Dog Pic========*/
+
 /* =======================Media Queries (Medium Devices)================================ */
 @media screen and (max-width:1024px) {
     .portfolio__container {
