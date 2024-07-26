@@ -24,7 +24,25 @@
 
 .portfolio__item:hover {
     border-color: var(--color-primary-variant);
-    background: transparent;
+    background: #416881;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary-variant); /* Hover background color */
+  transform: translateY(-100%); /* Start above the element */
+  transition: transform 0.5s ease; /* Animation duration and timing */
+  z-index: 1; /* Ensure it appears above the original background */
+}
+
+.portfolio__item:hover::before {
+  transform: translateY(0); /* Move down to cover the element */
 }
 
 .portfolio__item-image {

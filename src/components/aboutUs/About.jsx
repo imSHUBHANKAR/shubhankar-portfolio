@@ -20,7 +20,7 @@ const About = () => {
         <div className="portfolio-card">
           <div className="portfolio-card-content">
             <div className="dog-image">
-              <img src={DogPic} alt="Dog" />
+              <img src={DogPic} style={{width:'10rem', height:'auto', marginTop: '-27px'}} alt="Dog" />
             </div>
             <div className="portfolio-card-details">
               {/* <article className="portfolio__item "> */}
