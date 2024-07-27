@@ -145,7 +145,7 @@ const About = () => {
               delivering innovative solutions in collaborative environments.
             </p>
           </div>
-          <img src={Cat}  style={{width:'10rem', height:'auto', marginLeft:'9rem'}} alt="alt"/>
+          <img src={Cat}  style={{width:'10rem', height:'auto', marginLeft:'5rem'}} alt="alt"/>
           <div className="portfolio__item-cts"></div>
         </article>
       </div>
