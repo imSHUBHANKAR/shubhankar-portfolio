@@ -7,6 +7,10 @@
 }
 
 /* ============================================== */
+#portfolio{
+  background-image: url(../../assets/pic-bg.png);
+}
+
 
 .portfolio__container {
     display: grid;
@@ -28,6 +32,13 @@
     transition: background-color 0.3s ease;
 }
 
+.portfolio__item {
+  position: relative;
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow the parent */
+  background-color: #416881; /* Default background color */
+  background: var(--color-bg-variant);
+}
+
 .portfolio__item::before {
   content: '';
   position: absolute;
@@ -35,15 +46,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-primary-variant); /* Hover background color */
-  transform: translateY(-100%); /* Start above the element */
-  transition: transform 0.5s ease; /* Animation duration and timing */
+  background: linear-gradient(to bottom, var(--color-primary-variant), var(--color-primary-variant));
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
   z-index: 1; /* Ensure it appears above the original background */
 }
 
 .portfolio__item:hover::before {
-  transform: translateY(0); /* Move down to cover the element */
+  transform: translateY(0);
 }
+
 
 .portfolio__item-image {
     border-radius: 1.5rem;
@@ -87,7 +99,8 @@
 }
 .portfolio-card:hover {
     border-color: var(--color-primary-variant);
-    background: transparent;
+    background: #416881;
+    transition: background-color 0.3s ease;
 }
 
 .portfolio-card-content {
