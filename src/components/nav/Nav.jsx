@@ -31,11 +31,11 @@ const Nav = () => {
       <a href='#services' onClick={()=> setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><FcInTransit/></a>
       <a href='#contact' onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><FcContacts/></a> */}
 
-      <Link to='header' spy={true} smooth={true} offset={50} duration={500} onClick={() => setActiveNav('#header')} className={activeNav === '#header' ? 'active' : ''} ><FcHome/></Link>
-      <Link to='about' spy={true} smooth={true} offset={50} duration={500} onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><FcManager/></Link>
-      <Link to='experience' spy={true} smooth={true} offset={50} duration={500} onClick={()=> setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><FcBiotech/></Link>
-      <Link to='services' spy={true} smooth={true} offset={50} duration={500} onClick={()=> setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><FcInTransit/></Link>
-      <Link to='contact' spy={true} smooth={true} offset={50} duration={500} onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><FcContacts/></Link>
+      <Link to='header' spy={true} smooth={true} offset={0} duration={500} onClick={() => setActiveNav('#header')} className={activeNav === '#header' ? 'active' : ''} ><FcHome/></Link>
+      <Link to='about' spy={true} smooth={true} offset={20} duration={500} onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><FcManager/></Link>
+      <Link to='experience' spy={true} smooth={true} offset={20} duration={500} onClick={()=> setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><FcBiotech/></Link>
+      <Link to='services' spy={true} smooth={true} offset={20} duration={500} onClick={()=> setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><FcInTransit/></Link>
+      <Link to='contact' spy={true} smooth={true} offset={20} duration={500} onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><FcContacts/></Link>
     </nav>
   )
 }
