@@ -64,11 +64,13 @@ const Header = () => {
         <h2 className='wrap'>🤖.•° <span className='MyPost'>{text}</span></h2>
         {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ipsum atque expedita odit sint laudantium quibusdam illo quos cumque. Est porro adipisci blanditiis officiis aut incidunt architecto nulla tempora! Natus!</p> */}
         <CTA/>
+        {/* left side navigation */}
         <HeaderSocials/>
+        {/* My Profile Image */}
         <div className="me">
           <img src={ME} alt='Profile Pic' />
         </div>
-
+        {/* right side */}
         <Link to='contact' spy={true} smooth={true} offset={50} duration={500} className='scroll__down'>Scroll Down</Link>
 
 
