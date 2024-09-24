@@ -517,5 +517,82 @@ header{
         display: none;
     }
 }
+/* ============Update css for ME ============================= */
+/* Profile Image Styling */
+.me {
+  background: linear-gradient(var(--color-primary), #ffba08);
+  width: 22rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 3rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.me img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image fits properly within the container */
+  border-radius: 12rem 12rem 0 0;
+}
+
+/* ====================Media Queries for medium devices (Tablets, etc.)========*/
+@media screen and (max-width: 1024px) {
+  .me {
+      width: 18rem;
+      height: 24rem;
+      left: calc(50% - 9rem); /* Adjust left positioning for smaller width */
+      padding: 4rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  header {
+      height: 68vh;
+  }
+}
+
+/* ====================Media Queries for small devices (Phones)========*/
+@media screen and (max-width: 600px) {
+  header {
+      height: 100vh;
+  }
+
+  .me {
+      width: 14rem; /* Shrink the width of the container */
+      height: 18rem; /* Shrink the height of the container */
+      left: calc(50% - 7rem); /* Adjust left positioning for smaller width */
+      padding: 2rem 1rem 1rem 1rem;
+      margin-top: 2rem; /* Adjust margin for better layout */
+  }
+
+  .header__socials,
+  .scroll__down {
+      display: none; /* Hide socials and scroll down icon for mobile */
+  }
+}
+
+/* ====================Extra Small Devices (Phones in portrait mode)======== */
+@media screen and (max-width: 400px) {
+  .me {
+      width: 12rem;
+      height: 16rem;
+      left: calc(50% - 6rem); /* Adjust for smaller screens */
+      padding: 1.5rem 1rem 1rem 1rem;
+      margin-top: 1.5rem;
+  }
+
+  .me img {
+      border-radius: 50%; /* Optionally switch to a circular image on smaller screens */
+  }
+
+  header {
+      height: 90vh;
+  }
+}
+
 
 
