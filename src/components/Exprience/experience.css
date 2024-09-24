@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    padding: 2rem;
 }
 
 /* Each experience card */
@@ -15,7 +16,6 @@
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
-    transition: var(--transition);
     background-color: #013a63;
     position: relative;
     overflow: hidden;
@@ -23,16 +23,16 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Hover effect to make the card pop */
+/* Hover effect */
 .experience__container > div:hover {
     background: #012a4a;
     border-color: var(--color-primary-variant);
-    cursor: pointer;
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 
-/* Card title styling */
+/* Card title */
 .experience__container > div > h3 {
     text-align: center;
     margin-bottom: 2rem;
@@ -46,14 +46,14 @@
     color: var(--color-light);
 }
 
-/* The content within the card */
+/* Experience content */
 .experience__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
 }
 
-/* Individual skill items in the card */
+/* Skill item details */
 .experience__details {
     display: flex;
     gap: 1rem;
@@ -64,19 +64,7 @@
     transition-delay: 0.3s;
 }
 
-/* Animation for skill items to appear with delay */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Icon for each skill */
+/* Icon styling */
 .experience__details-icon {
     font-size: 2rem;
     color: var(--color-primary);
@@ -88,10 +76,47 @@
     color: var(--color-light);
 }
 
-/* Media Queries (for medium devices) */
+/* Animation for fading in skill items */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ====================Media Queries (Large Devices)==================== */
+@media screen and (max-width: 1200px) {
+    .experience__container {
+        grid-template-columns: 1fr 1fr;
+        padding: 1.5rem;
+    }
+
+    .experience__container > div {
+        padding: 2rem 3rem;
+    }
+
+    .experience__content {
+        row-gap: 1.5rem;
+    }
+
+    .experience__details {
+        gap: 0.8rem;
+    }
+
+    .experience__container > div > h3 {
+        font-size: 1.6rem;
+    }
+}
+
+/* ====================Media Queries (Medium Devices)==================== */
 @media screen and (max-width: 1024px) {
     .experience__container {
         grid-template-columns: 1fr;
+        padding: 1.5rem;
     }
 
     .experience__container > div {
@@ -101,26 +126,77 @@
     }
 
     .experience__content {
+        row-gap: 1.5rem;
         padding: 1rem;
     }
 
     .experience__details {
-        font-size: 10px;
+        font-size: 1rem;
+    }
+
+    .experience__container > div > h3 {
+        font-size: 1.5rem;
+    }
+
+    .experience__details-icon {
+        font-size: 1.8rem;
     }
 }
 
-/* Media Queries (for small devices) */
-@media screen and (max-width: 600px) {
+/* ====================Media Queries (Small Devices)==================== */
+@media screen and (max-width: 768px) {
     .experience__container {
         grid-template-columns: 1fr;
+        padding: 1rem;
     }
 
-    .experience__container {
+    .experience__container > div {
         width: 100%;
-        padding: 2rem 1rem;
+        padding: 1.5rem;
+        margin: 0 auto;
+    }
+
+    .experience__content {
+        row-gap: 1rem;
+        padding: 0.5rem;
     }
 
     .experience__details {
-        font-size: 10px;
+        font-size: 0.9rem;
+    }
+
+    .experience__container > div > h3 {
+        font-size: 1.4rem;
+    }
+
+    .experience__details-icon {
+        font-size: 1.5rem;
+    }
+}
+
+/* ====================Media Queries (Extra Small Devices)==================== */
+@media screen and (max-width: 480px) {
+    .experience__container {
+        padding: 0.5rem;
+    }
+
+    .experience__container > div {
+        padding: 1rem;
+    }
+
+    .experience__content {
+        row-gap: 0.5rem;
+    }
+
+    .experience__details {
+        font-size: 0.8rem;
+    }
+
+    .experience__container > div > h3 {
+        font-size: 1.2rem;
+    }
+
+    .experience__details-icon {
+        font-size: 1.2rem;
     }
 }
