@@ -348,6 +348,78 @@ header{
   *:before, *:after {
     box-sizing: inherit;
   }
+  /* CTA Container */
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Space between buttons */
+  margin-top: 2rem;
+}
+
+/* Default button styles */
+.cta .btn {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007BFF;
+  transition: background-color 0.3s;
+}
+
+.cta .btn-primary {
+  background-color: #28a745; /* Color for "Let's Talk" button */
+}
+
+/* Add hover effect */
+.cta .btn:hover {
+  background-color: #0056b3;
+}
+
+.cta .btn-primary:hover {
+  background-color: #218838;
+}
+
+/* Icon spacing */
+.cta .btn svg {
+  margin-left: 0.5rem;
+}
+
+/* ============= Media Queries for Responsive Design ============= */
+
+/* For medium-sized screens (tablets, etc.) */
+@media (max-width: 768px) {
+  .cta {
+    flex-direction: column;
+    gap: 1.5rem; /* Increase the gap between buttons on smaller screens */
+  }
+
+  .cta .btn {
+    width: 100%;
+    text-align: center;
+    padding: 1rem; /* Increase padding for larger touch areas */
+    font-size: 1.2rem; /* Slightly larger text for better readability */
+  }
+}
+
+/* For small-sized screens (phones) */
+@media (max-width: 480px) {
+  .cta {
+    gap: 1rem;
+  }
+
+  .cta .btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+}
+
 
 
 /*========================Socials ================*/
