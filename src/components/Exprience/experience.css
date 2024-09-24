@@ -1,88 +1,126 @@
-#experience{
+#experience {
     background-image: url(../../assets/pic-bg.png);
 }
 
-
-.experience__container{
+/* Main container for the experience section */
+.experience__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
-.experience__container >  div{  
-    /* I used ">div" because it will make a box with the help of div which is just below the "experience__container" class */
+/* Each experience card */
+.experience__container > div {
     background: var(--color-bg-variant);
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
     background-color: #013a63;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.experience__container  div:hover {
-    background: transparent;
+/* Hover effect to make the card pop */
+.experience__container > div:hover {
+    background: #012a4a;
     border-color: var(--color-primary-variant);
     cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-.experience__container > div > h3{
+/* Card title styling */
+.experience__container > div > h3 {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--color-primary);
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
 }
 
-.experience__content{
+/* Change title color on hover */
+.experience__container > div:hover h3 {
+    color: var(--color-light);
+}
+
+/* The content within the card */
+.experience__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
 }
 
-.experience__details{
+/* Individual skill items in the card */
+.experience__details {
     display: flex;
     gap: 1rem;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeIn 0.5s forwards;
+    transition-delay: 0.3s;
 }
 
-.experience__details-icon{
-    margin-top: 6px;
+/* Animation for skill items to appear with delay */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Icon for each skill */
+.experience__details-icon {
+    font-size: 2rem;
     color: var(--color-primary);
+    transition: color 0.3s ease;
 }
 
-.experience__content-image{
-    width: 100px;
-    padding: 20px;
-    border-radius: 15px;
+/* Icon color change on hover */
+.experience__container > div:hover .experience__details-icon {
+    color: var(--color-light);
 }
 
-/* ====================Media Queries(medium devices)========*/
-@media screen and (max-width:1024px) {
-    .experience__container{
+/* Media Queries (for medium devices) */
+@media screen and (max-width: 1024px) {
+    .experience__container {
         grid-template-columns: 1fr;
     }
 
-    .experience__container > div{
+    .experience__container > div {
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
     }
 
-    .experience__content{
+    .experience__content {
         padding: 1rem;
     }
-    .experience__details{
+
+    .experience__details {
         font-size: 10px;
     }
 }
-/* ====================Media Queries(small devices)========*/
-@media screen and(max-width:600px) {
-    .experience__container{
-        /* grid-template-columns: 1fr 1fr; */
+
+/* Media Queries (for small devices) */
+@media screen and (max-width: 600px) {
+    .experience__container {
         grid-template-columns: 1fr;
     }
-    .experience__container{
+
+    .experience__container {
         width: 100%;
         padding: 2rem 1rem;
     }
-    .experience__details{
+
+    .experience__details {
         font-size: 10px;
     }
 }

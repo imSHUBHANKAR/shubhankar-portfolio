@@ -13,7 +13,7 @@ const Contact = () => {
 
   const form =useRef();
 
-  // function for sendig email----------------------- 
+  // function for sending email----------------------- 
   const sendEmail = (e) => {
     e.preventDefault();
 

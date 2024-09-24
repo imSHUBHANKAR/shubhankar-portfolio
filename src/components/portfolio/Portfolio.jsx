@@ -14,6 +14,8 @@ import Figma3 from "../../assets/Figma3.png"
 import Figma4 from "../../assets/Figma4.png"
 import Figma5 from "../../assets/Figma5.png"
 import Figma6 from "../../assets/Figma6.png"
+import Figma7 from "../../assets/Figma7.png"
+import Figma8 from "../../assets/Figma8.png"
 
 
 
@@ -100,11 +102,35 @@ const Portfolio = () => {
 
 
         {/* We can write also the below code but it will became very big. So we are using array as above */}
+        <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={Figma8} alt=''/>
+          </div>
+          <h3>Dashboard in React using Tailwind CSS</h3>
+          <div className="portfolio__item-cts">
+            <a href='https://www.figma.com/design/v3NUjY8xx7yf9LXCJrBXSg/Dashboard?node-id=0-1&t=370mWoktDeV4gex0-1' className='btn' target='_blank' rel="noopener noreferrer">Figma</a>
+            <a href='https://www.figma.com/design/v3NUjY8xx7yf9LXCJrBXSg/Dashboard?node-id=0-1&t=370mWoktDeV4gex0-1' className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo <FcBinoculars/></a>
+          </div>
+          
+
+        </article>
+        <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={Figma7} alt=''/>
+          </div>
+          <h3>React Website</h3>
+          <div className="portfolio__item-cts">
+            <a href='https://www.figma.com/design/i7rd86qLNPTp2VHakVQ4zq/Finstreet?node-id=0-1&t=2G5DuJRXi0nDYpFQ-1' className='btn' target='_blank' rel="noopener noreferrer">Figma</a>
+            <a href='https://www.figma.com/proto/i7rd86qLNPTp2VHakVQ4zq/Finstreet?node-id=240-203&node-type=canvas&t=2G5DuJRXi0nDYpFQ-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=14%3A389' className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo <FcBinoculars/></a>
+          </div>
+          
+
+        </article>
          <article className='portfolio__item '>
           <div className="portfolio__item-image">
             <img src={Figma1} alt=''/>
           </div>
-          <h3>Academic Website</h3>
+          <h3>Academic Website (UI/UX)</h3>
           <div className="portfolio__item-cts">
             <a href='https://www.figma.com/file/JVu5UEOl84C2g6uPI2Ubsr/CforCoding?type=design&node-id=0%3A1&mode=design&t=rA92nz6Zuo0N8iHr-1' className='btn' target='_blank' rel="noopener noreferrer">Figma</a>
             <a href='https://www.figma.com/proto/JVu5UEOl84C2g6uPI2Ubsr/CforCoding?type=design&node-id=21-426&t=rA92nz6Zuo0N8iHr-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=21%3A426' className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo <FcBinoculars/></a>
@@ -140,7 +166,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={Figma2} alt=''/>
           </div>
-          <h3>Debit/Credit Card Based on QR Code</h3>
+          <h3>Debit/Credit Card Based on QR Code (UI/UX)</h3>
           <div className="portfolio__item-cts">
             <a href='https://www.figma.com/file/fbVUAiqoD1S3mWVKUZRJZE/Debit%2FCredit-Card?type=design&node-id=0%3A1&mode=design&t=PXhu27ET2FbhV6Yn-1' className='btn' target='_blank' rel="noopener noreferrer">Figma</a>
             <a href='https://www.figma.com/proto/fbVUAiqoD1S3mWVKUZRJZE/Debit%2FCredit-Card?type=design&node-id=10-64&t=PXhu27ET2FbhV6Yn-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=10%3A64' className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo <FcBinoculars/></a>
@@ -153,7 +179,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={Figma3} alt=''/>
           </div>
-          <h3>Music App System</h3>
+          <h3>Music App System (UI/UX)</h3>
           <div className="portfolio__item-cts">
             <a href='https://www.figma.com/file/o1k8g3s7w0D6iI4Qq3DnCV/MusicPlayer?type=design&node-id=0%3A1&mode=design&t=RXsiEoiMmu1q256Y-1' className='btn' target='_blank' rel="noopener noreferrer">Figma</a>
             <a href='https://www.figma.com/proto/o1k8g3s7w0D6iI4Qq3DnCV/MusicPlayer?type=design&node-id=20-7&t=Fr9s2ZJmgiefChGG-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=20%3A7&mode=design' className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo <FcBinoculars/></a>
@@ -165,7 +191,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={Figma4} alt=''/>
           </div>
-          <h3>E-commerce Website Design</h3>
+          <h3>E-commerce Website Design (UI/UX)</h3>
           <div className="portfolio__item-cts">
             <a href='https://www.figma.com/file/UGNe73X4aoAL3MddMDgqFn/LoginPage?type=design&node-id=0%3A1&mode=design&t=yAXG8UdM1UyScpdT-1' className='btn' target='_blank' rel="noopener noreferrer">Figma</a>
             <a href='https://www.figma.com/proto/UGNe73X4aoAL3MddMDgqFn/LoginPage?type=design&node-id=2-10&t=3cJmxk7dZh3E9jjh-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A10&mode=design' className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo <FcBinoculars/></a>
@@ -177,7 +203,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={Figma5} alt=''/>
           </div>
-          <h3>Blog Website using HTML/CSS/JavaScritp</h3>
+          <h3>Blog Website using HTML/CSS/JavaScript </h3>
           <div className="portfolio__item-cts">
             <a href='https://github.com' className='btn' target='_blank' rel="noopener noreferrer">GitHub</a>
             <a href='https://dribbble.com/' className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo <FcBinoculars/></a>

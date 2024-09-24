@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-scroll'
-import CV from './cv.pdf'
+import CV from './CV.pdf'
 import {FcDownload} from 'react-icons/fc'
 import {FcCustomerSupport} from 'react-icons/fc'
 

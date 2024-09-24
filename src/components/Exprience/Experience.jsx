@@ -52,6 +52,13 @@ const Experience = () => {
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
+            <article className="experience__details">
+              <FcRating className="experience__details-icon" />
+              <div>
+                <h4>Tailwind CSS</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
           </div>
         </div>
         {/* --------------------------------2nd sections -------------------------------------------------*/}
@@ -102,14 +109,14 @@ const Experience = () => {
             <article className="experience__details">
               <FcComments className="experience__details-icon" />
               <div>
-                <h4>Android App</h4>
+                <h4>React Native</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <FcComments className="experience__details-icon" />
               <div>
-                <h4>Kotlin</h4>
+                <h4>Tailwind CSS</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
@@ -133,7 +140,7 @@ const Experience = () => {
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
-            <div className="aexperience__content-image">
+            <div className="experience__content-image">
               <img src={UI} alt="UI-pic" />
             </div>
           </div>
