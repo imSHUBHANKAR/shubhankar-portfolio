@@ -37,7 +37,7 @@ import { FcCustomerSupport } from 'react-icons/fc'
 const CTA = () => {
   return (
     <div className='cta'>
-      <a href={CV} download='Shubhankar' className='btn'>
+      <a href={CV} download='Shubhankar' className='btn custom-blue-button'>
         Download CV <FcDownload />
       </a>
 
@@ -47,7 +47,7 @@ const CTA = () => {
         smooth={true}
         offset={30}
         duration={500}
-        className='btn btn-primary'
+        className=' custom-button'
       >
         Let's Talk!.. <FcCustomerSupport />
       </Link>
