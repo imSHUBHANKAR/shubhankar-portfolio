@@ -37,7 +37,7 @@ import { FcCustomerSupport } from 'react-icons/fc'
 const CTA = () => {
   return (
     <div className='cta'>
-      <a href={CV} download='Shubhankar' className='btn custom-blue-button'>
+      <a href={CV} download='Shubhankar Kumar React Developer' className='btn custom-blue-button'>
         Download CV <FcDownload />
       </a>
 

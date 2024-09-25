@@ -161,11 +161,45 @@ const Experience = () => {
   const leftSections = useRef([]);
   const rightSections = useRef([]);
 
+  // useEffect(() => {
+  //   const options = {
+  //     threshold: 0.1,
+  //   };
+
+  //   const handleIntersection = (entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         entry.target.classList.add('in-view');
+  //       } else {
+  //         entry.target.classList.remove('in-view');
+  //       }
+  //     });
+  //   };
+
+  //   const observer = new IntersectionObserver(handleIntersection, options);
+
+  //   leftSections.current.forEach((section) => {
+  //     if (section) observer.observe(section);
+  //   });
+
+  //   rightSections.current.forEach((section) => {
+  //     if (section) observer.observe(section);
+  //   });
+
+  //   return () => {
+  //     leftSections.current.forEach((section) => {
+  //       if (section) observer.unobserve(section);
+  //     });
+  //     rightSections.current.forEach((section) => {
+  //       if (section) observer.unobserve(section);
+  //     });
+  //   };
+  // }, []);
   useEffect(() => {
     const options = {
       threshold: 0.1,
     };
-
+  
     const handleIntersection = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -175,26 +209,32 @@ const Experience = () => {
         }
       });
     };
-
+  
     const observer = new IntersectionObserver(handleIntersection, options);
-
-    leftSections.current.forEach((section) => {
+  
+    // Copy ref values to local variables to avoid stale references in cleanup
+    const currentLeftSections = leftSections.current;
+    const currentRightSections = rightSections.current;
+  
+    currentLeftSections.forEach((section) => {
       if (section) observer.observe(section);
     });
-
-    rightSections.current.forEach((section) => {
+  
+    currentRightSections.forEach((section) => {
       if (section) observer.observe(section);
     });
-
+  
     return () => {
-      leftSections.current.forEach((section) => {
+      // Use the local variables in cleanup
+      currentLeftSections.forEach((section) => {
         if (section) observer.unobserve(section);
       });
-      rightSections.current.forEach((section) => {
+      currentRightSections.forEach((section) => {
         if (section) observer.unobserve(section);
       });
     };
   }, []);
+  
 
   return (
     <section id="experience">
