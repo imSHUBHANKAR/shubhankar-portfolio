@@ -102,7 +102,7 @@ const Portfolio = () => {
 
 
         {/* We can write also the below code but it will became very big. So we are using array as above */}
-        <article className='portfolio__item'>
+        <article className='portfolio__item portfolio__left'>
           <div className="portfolio__item-image">
             <img src={Figma8} alt=''/>
           </div>
@@ -121,12 +121,12 @@ const Portfolio = () => {
           <h3>React Website</h3>
           <div className="portfolio__item-cts">
             <a href='https://www.figma.com/design/i7rd86qLNPTp2VHakVQ4zq/Finstreet?node-id=0-1&t=2G5DuJRXi0nDYpFQ-1' className='btn' target='_blank' rel="noopener noreferrer">Figma</a>
-            <a href='https://www.figma.com/proto/i7rd86qLNPTp2VHakVQ4zq/Finstreet?node-id=240-203&node-type=canvas&t=2G5DuJRXi0nDYpFQ-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=14%3A389' className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo <FcBinoculars/></a>
+            <a href='https://shubh-finance-website.vercel.app/' className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo <FcBinoculars/></a>
           </div>
           
 
         </article>
-         <article className='portfolio__item '>
+         <article className='portfolio__item experience__right'>
           <div className="portfolio__item-image">
             <img src={Figma1} alt=''/>
           </div>
@@ -162,7 +162,7 @@ const Portfolio = () => {
 
         </article>
 
-        <article className='portfolio__item'>
+        <article className='portfolio__item portfolio__left'>
           <div className="portfolio__item-image">
             <img src={Figma2} alt=''/>
           </div>
@@ -187,7 +187,7 @@ const Portfolio = () => {
 
         </article>
 
-        <article className='portfolio__item'>
+        <article className='portfolio__item experience__right'>
           <div className="portfolio__item-image">
             <img src={Figma4} alt=''/>
           </div>
@@ -199,7 +199,7 @@ const Portfolio = () => {
 
         </article>
 
-        <article className='portfolio__item'>
+        <article className='portfolio__item portfolio__left'>
           <div className="portfolio__item-image">
             <img src={Figma5} alt=''/>
           </div>

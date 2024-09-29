@@ -26,11 +26,7 @@
     transition: var(--transition);
 }
 
-.portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: #416881;
-    transition: background-color 0.3s ease;
-}
+
 
 .portfolio__item {
   position: relative;
@@ -52,9 +48,9 @@
   z-index: 1; /* Ensure it appears above the original background */
 }
 
-.portfolio__item:hover::before {
+/* .portfolio__item:hover::before {
   transform: translateY(0);
-}
+} */
 
 
 .portfolio__item-image {
