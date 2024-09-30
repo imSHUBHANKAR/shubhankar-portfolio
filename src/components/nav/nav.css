@@ -1,4 +1,4 @@
-nav{
+/* nav{
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: block;
@@ -33,6 +33,43 @@ nav a.active{
     box-shadow: inset 0px 0px 8px #4db5ff;
     color: var(--color-white);
 
+} */
+
+
+nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.7rem;
+    display: flex;
+    gap: 0.9rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+nav a {
+    background: transparent;
+    padding: 0.4rem;
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    background: rgba(88, 87, 87, 0.6);
+    cursor: pointer; /* Add this to change the cursor on hover */
+}
+
+nav a.active {
+    background-color: #140d36;
+    box-shadow: inset 0px 0px 8px #4db5ff;
+    color: var(--color-white);
 }
 
 

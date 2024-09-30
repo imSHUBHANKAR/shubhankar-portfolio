@@ -11,25 +11,25 @@ import Cat from '../../assets/cat.png';
 
 const About = () => {
   return (
-    <section id="portfolio">
+    <section id="about">
       <h5>Get to Know</h5>
       <h2>About Me</h2>
 
-      <div className="container portfolio__container">
+      <div className="container about__container">
         {/* -----------------------Dog Pic--------------- */}
-        <div className="portfolio-card">
-          <div className="portfolio-card-content">
+        <div className="about-card">
+          <div className="about-card-content">
             <div className="dog-image">
               <img src={DogPic} style={{width:'10rem', height:'auto', marginTop: '-27px'}} alt="Dog" />
             </div>
-            <div className="portfolio-card-details">
-              {/* <article className="portfolio__item "> */}
-              <div className="portfolio-card__item-image  ">
+            <div className="about-card-details">
+              {/* <article className="about__item "> */}
+              <div className="about-card__item-image  ">
                 <img src={ME} alt="Profile_Pic" />
               </div>
               <div className="s">
                 <h3>Social Links</h3>
-                <div className="portfolio-card__social_links">
+                <div className="about-card__social_links">
                   <a
                     className="linkedin"
                     href="https://www.linkedin.com/in/mrshubhankar/"
@@ -65,14 +65,14 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="portfolio__item-cts"></div>
+              <div className="about__item-cts"></div>
             </div>
           </div>
         </div>
         {/* -----------------------Dog Pic--------------- */}
         {/* --------------------------------1st sections -------------------------------------------------*/}
-        {/* <article className="portfolio__item ">
-          <div className="portfolio__item-image">
+        {/* <article className="about__item ">
+          <div className="about__item-image">
             <img src={ME} alt="Profile_Pic" />
           </div>
           <div className="s">
@@ -113,16 +113,16 @@ const About = () => {
             </div>
           </div>
 
-          <div className="portfolio__item-cts"></div>
+          <div className="about__item-cts"></div>
         </article> */}
 
         {/* --------------------------------2nd sections -------------------------------------------------*/}
-        {/* <div className="portfolio-card">
-          <div className="portfolio-card-content">
+        {/* <div className="about-card">
+          <div className="about-card-content">
             <div className="dog-image">
               <img src={DogPic} alt="Dog" />
             </div>
-            <div className="portfolio-card-details">
+            <div className="about-card-details">
               <p style={{ margin: "10px" }}>
                 Highly motivated Frontend and UI/UX Developer with a strong
                 foundation in computer science. Committed to continuous learning
@@ -130,13 +130,13 @@ const About = () => {
                 in creative arts for idea generation, adept at multitasking, and
                 delivering innovative solutions in collaborative environments.
               </p>
-              <div className="portfolio__item-cts"></div>
+              <div className="about__item-cts"></div>
             </div>
           </div>
         </div> */}
 
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
+        <article className="about__item">
+          <div className="about__item-image">
             <p style={{ margin: "10px" }}>
               Highly motivated Frontend and UI/UX Developer with a strong
               foundation in computer science. Committed to continuous learning
@@ -146,7 +146,7 @@ const About = () => {
             </p>
           </div>
           <img src={Cat}  style={{width:'10rem', height:'auto', marginLeft:'5rem'}} alt="alt"/>
-          <div className="portfolio__item-cts"></div>
+          <div className="about__item-cts"></div>
         </article>
       </div>
     </section>
