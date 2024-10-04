@@ -31,6 +31,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import CV from './cv.pdf'
+import UIUXcv from './UiUxResume.pdf'
 import { FcDownload } from 'react-icons/fc'
 import { FcCustomerSupport } from 'react-icons/fc'
 
@@ -38,7 +39,10 @@ const CTA = () => {
   return (
     <div className='cta'>
       <a href={CV} download='Shubhankar-Kumar-Frontend-Developer' className='btn custom-blue-button'>
-        Download CV <FcDownload />
+        Software Resume <FcDownload />
+      </a>
+      <a href={UIUXcv} download='Shubhankar-Kumar-Frontend-Developer' className='btn custom-blue-button1'>
+        UI/UX Resume <FcDownload />
       </a>
 
       <Link

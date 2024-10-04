@@ -377,9 +377,9 @@ header{
 }
 
 /* Add hover effect */
-.cta .btn:hover {
+/* .cta:hover {
   background-color: #0056b3;
-}
+} */
 
 .cta .btn-primary:hover {
   background-color: #218838;
@@ -402,9 +402,25 @@ header{
   /* Hover Gradient Background */
   transition: background 0.3s ease;
 }
+.custom-blue-button1 {
+  /* Text Color */
+  color: white;
 
+  /* Gradient Background */
+  background: linear-gradient(to right, #132a13, #4f772d, #ecf39e);
+
+  /* Hover Gradient Background */
+  transition: background 0.3s ease;
+}
 .custom-blue-button:hover {
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(30, 64, 175, 0.8);
   background: linear-gradient(to bottom right, #3b82f6, #2563eb, #1d4ed8);
+}
+.custom-blue-button1:hover {
+  color: white;
+  box-shadow: 0 10px 15px -3px #4f772d;
+  background: linear-gradient(to bottom right, #ecf39e, #4f772d, #132a13);
 }
 
 /* Focus Outline and Ring */
@@ -412,36 +428,50 @@ header{
   outline: none;
   box-shadow: 0 0 0 4px rgba(147, 197, 253, 0.5); /* focus:ring-blue-300 */
 }
+.custom-blue-button1:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(225, 189, 6, 0.5); /* focus:ring-blue-300 */
+}
 
 .custom-blue-button:focus-visible {
   box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.8); /* dark:focus:ring-blue-800 */
+}
+.custom-blue-button1:focus-visible {
+  box-shadow: 0 0 0 4px rgba(194, 234, 131, 0.8); /* dark:focus:ring-blue-800 */
 }
 
 /* Shadow */
 .custom-blue-button {
   box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.5); /* shadow-lg shadow-blue-500/50 */
 }
-
-.custom-blue-button:hover {
-  box-shadow: 0 10px 15px -3px rgba(30, 64, 175, 0.8); /* dark:shadow-lg dark:shadow-blue-800/80 */
+.custom-blue-button1 {
+  box-shadow: 0 10px 15px -3px #4f772d; /* shadow-lg shadow-blue-500/50 */
 }
 
+
+/* .custom-blue-button:hover {
+  box-shadow: 0 10px 15px -3px rgba(30, 64, 175, 0.8);
+}
+.custom-blue-button1:hover {
+  box-shadow: 0 10px 15px -3px #4f772d; 
+} */
+
 /* Font and Text Properties */
-.custom-blue-button {
+.custom-blue-button, .custom-blue-button1 {
   font-weight: 500; /* font-medium */
   font-size: 0.875rem; /* text-sm */
   text-align: center;
 }
 
 /* Padding and Margins */
-.custom-blue-button {
+.custom-blue-button, .custom-blue-button1 {
   padding: 0.625rem 1.25rem; /* px-5 py-2.5 */
   margin-right: 0.5rem; /* me-2 */
   margin-bottom: 0.5rem; /* mb-2 */
 }
 
 /* Border Radius */
-.custom-blue-button {
+.custom-blue-button, .custom-blue-button1 {
   border-radius: 0.5rem; /* rounded-lg */
 }
 
@@ -458,6 +488,7 @@ header{
 }
 
 .custom-button:hover {
+  cursor: pointer;
   background: linear-gradient(to bottom right, #a855f7, #9333ea, #7e22ce);
 }
 
