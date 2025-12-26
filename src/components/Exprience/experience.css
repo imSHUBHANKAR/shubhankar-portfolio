@@ -6,14 +6,15 @@
 .experience__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: red;
 }
 
 /* Each experience card */
 .experience__container > div {
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
+    padding: 2rem 2rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     background-color: #013a63;
@@ -66,7 +67,7 @@
 
 /* Icon styling */
 .experience__details-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--color-primary);
     transition: color 0.3s ease;
 }

@@ -12,7 +12,7 @@ const Header = () => {
   // * for Name Animation-----------------------
   const [loopNum,setLoopNum]=useState(0);
   const [isDeleting,setIsDeleting]=useState(false);
-  const toRotate =["Web Developer,", "App Developer,","UI/UX Designer,","Content Writer."];
+  const toRotate =["User Interface (UI)","User Experience (UX)","Web/App Design", "Wireframe/Prototype","Content Writer"];
   const [text,setText]=useState('');
   const [delta,setDelta]=useState(100 - Math.random()* 0);
   const period=2000;
@@ -50,16 +50,14 @@ const Header = () => {
 
 
 
-
-
   return (
     <header id='header'>
       <div className="container header__container">
-        <h5>Hello I'm</h5>
+        <h5>Hi I'm</h5>
         {/* <h1>Shubhankar Kumar</h1> */}
         {/* <h5 className='text-light'>Full Stack Developer</h5> */}
         {/* <h1>{`Shubhankar Kumar `}<span className='wrap'>{text}</span></h1> */}
-        <h1 className='MyName'>Shubhankar Kumar </h1>
+        <h1 className='MyName'>SHUBHANKAR KUMAR </h1>
 
         <h2 className='wrap'>🤖.•° <span className='MyPost'>{text}</span></h2>
         {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ipsum atque expedita odit sint laudantium quibusdam illo quos cumque. Est porro adipisci blanditiis officiis aut incidunt architecto nulla tempora! Natus!</p> */}

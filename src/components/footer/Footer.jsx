@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='footer__copyright'>
-        <small><FcCopyright/> C for Coding. All rights are reserved (2023).</small>
+        <small><FcCopyright/> C for Coding. All rights are reserved (2025).</small>
       </div>
 
 

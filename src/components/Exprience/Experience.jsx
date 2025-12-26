@@ -242,56 +242,51 @@ const Experience = () => {
       <h2>My Experience</h2>
 
       <div className="container experience__container">
-        {/* --------------------------------1st sections -------------------------------------------------*/}
+        {/* --------------------------------1st sections ----------------------------------------------*/}
         <div
           className="experience__frontend experience__left"
           ref={(el) => leftSections.current.push(el)}
         >
-          <h3>Frontend Development</h3>
+          <h3>UX Research & Strategy</h3>
           
             {/* Your existing skill articles */}
             <div className="experience__content">
             <article className="experience__details">
               <FcRating className="experience__details-icon" />
-              <img src='' alt='html'/>
+              
               <div>
-                <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
+                <h4>User Research</h4>
+                {/* <small className="text-light">Experienced</small> */}
               </div>
             </article>
             <article className="experience__details">
               <FcRating className="experience__details-icon" />
               <div>
-                <h4>CSS</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>User Personas</h4>
               </div>
             </article>
             <article className="experience__details">
               <FcRating className="experience__details-icon" />
               <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>User Journey Mapping</h4>
               </div>
             </article>
             <article className="experience__details">
               <FcRating className="experience__details-icon" />
               <div>
-                <h4>Bootstrap</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Problem Definition</h4>
               </div>
             </article>
             <article className="experience__details">
               <FcRating className="experience__details-icon" />
               <div>
-                <h4>React Js</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Requirement Analysis</h4>
               </div>
             </article>
             <article className="experience__details">
               <FcRating className="experience__details-icon" />
               <div>
-                <h4>Tailwind CSS</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Stakeholder Discussion</h4>
               </div>
             </article>
           </div>
@@ -302,43 +297,35 @@ const Experience = () => {
           className="experience__backend experience__right"
           ref={(el) => rightSections.current.push(el)}
         >
-          <h3>Backend Development</h3>
+          <h3>UX Design Process</h3>
           
             {/* Your existing skill articles */}
             <div className="experience__content">
             <article className="experience__details">
               <FcLandscape className="experience__details-icon" />
               <div>
-                <h4>NodeJs</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>User Flows</h4>
               </div>
             </article>
             <article className="experience__details">
               <FcLandscape className="experience__details-icon" />
               <div>
-                <h4>MongoDB</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Information Architecture</h4>
+                
               </div>
             </article>
             <article className="experience__details">
               <FcLandscape className="experience__details-icon" />
               <div>
-                <h4>PHP</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Wireframing</h4>
+                <small className="text-light">Low, Mid & High Fidelity</small>
               </div>
             </article>
-            {/* <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Django</h4>
-              <small className='text-light'>Intermediate</small>
-              </div>
-            </article> */}
             <article className="experience__details">
               <FcLandscape className="experience__details-icon" />
               <div>
-                <h4>Laravel</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Interaction Design</h4>
+                
               </div>
             </article>
           </div>
@@ -350,22 +337,45 @@ const Experience = () => {
           className="experience__frontend experience__left"
           ref={(el) => leftSections.current.push(el)}
         >
-          <h3>App Development</h3>
+          <h3>UI Design (Visual Skills)</h3>
           
             {/* Your existing skill articles */}
             <div className="experience__content">
             <article className="experience__details">
               <FcComments className="experience__details-icon" />
               <div>
-                <h4>React Native</h4>
-                <small className="text-light">Experienced</small>
+                <h4>Visual Design</h4>
               </div>
             </article>
             <article className="experience__details">
               <FcComments className="experience__details-icon" />
               <div>
-                <h4>Tailwind CSS</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Layout & Spacing</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <FcComments className="experience__details-icon" />
+              <div>
+                <h4>Color & Typography</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <FcComments className="experience__details-icon" />
+              <div>
+                <h4>Responsive Design</h4>
+                <small className="text-light">Web/Dashboard/Mobile</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <FcComments className="experience__details-icon" />
+              <div>
+                <h4>Design Consistency</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <FcComments className="experience__details-icon" />
+              <div>
+                <h4>Component-based Design</h4>
               </div>
             </article>
           </div>
@@ -377,27 +387,55 @@ const Experience = () => {
           className="experience__frontend experience__right"
           ref={(el) => rightSections.current.push(el)}
         >
-          <h3>UI/UX Design</h3>
+          <h3>Design Systems & Collaboration</h3>
           
             {/* Your existing skill articles */}
             <div className="experience__content">
             <article className="experience__details">
               <FcOk className="experience__details-icon" />
               <div>
-                <h4>User Interface</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Design Systems</h4>
+                
               </div>
             </article>
             <article className="experience__details">
               <FcOk className="experience__details-icon" />
               <div>
-                <h4>User Experience</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Reusable Components</h4>
+                
               </div>
             </article>
-            <div className="experience__content-image">
+            <article className="experience__details">
+              <FcOk className="experience__details-icon" />
+              <div>
+                <h4>Style Guides</h4>
+                
+              </div>
+            </article>
+            <article className="experience__details">
+              <FcOk className="experience__details-icon" />
+              <div>
+                <h4>Developer Handoff</h4>
+                
+              </div>
+            </article>
+            <article className="experience__details">
+              <FcOk className="experience__details-icon" />
+              <div>
+                <h4>Design QA Support</h4>
+                
+              </div>
+            </article>
+            <article className="experience__details">
+              <FcOk className="experience__details-icon" />
+              <div>
+                <h4>Cross-team Collaboration</h4>
+                
+              </div>
+            </article>
+            {/* <div className="experience__content-image">
               <img src={UI} alt="UI-pic" />
-            </div>
+            </div> */}
           </div>
           
         </div>
